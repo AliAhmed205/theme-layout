@@ -31,46 +31,47 @@
        <!-- controls to change the position of the images -->
        <section>
         <h2>Control the images</h2>
-        <h3>Align </h3>
         <div>
+            <!-- <ul>
+                <li><label>
+                    Align them top: <input class="top" name="align-vert" type="radio">
+                </label></li>
+                <li><label>
+                    Align them bottom: <input class="bottom" name="align-vert" type="radio">
+                </label></li>
+            </ul> -->
             <ul>
                 <li><label>
-                    Align them top: <input name="align-vert" type="radio">
+                    Align them left: <input class="left" name="align-horizon" type="radio">
                 </label></li>
-                <li></li>
+                <li> <label>
+                    Align them center: <input checked class="center" name="align-horizon"  type="radio">
+                </label></li>
                 <li><label>
-                    Align them bottom: <input name="align-vert" type="radio">
+                    Align them right: <input class="right" name="align-horizon" type="radio">
                 </label></li>
             </ul>
-            <ul>
-                <li><label>
-                    Align them left: <input name="align-horizon" type="radio">
-                </label></li>
-                <li><label>
-                    Align them right: <input name="align-horizon" type="radio">
-                </label></li>
-            </ul>
-            <label>
-                Align them center: <input checked type="checkbox">
-            </label>
+           
         </div>
-        <ul>
-            <li><label>
-                Shape like:<input name="shape" type="radio"><div class="hexagon"></div> 
-            </label></li>
-            <li><label>
-                Shape like:  <input name="shape" type="radio"><div class="star"></div>
-            </label></li>
-            <li><label>
-                Shape like:<input class="circle" name="shape" type="radio"> <div class="circle"></div> 
-            </label></li>
-            <li><label>
-                Shape like:  <input name="shape" type="radio"><div class="ellipse"></div>
-            </label></li>
-            <li><label>
-                Shape like: <input name="shape" type="radio"><div class="inset"></div> 
-            </label></li>
-        </ul>
+        <!-- <section> -->
+            <ul>
+                <li><label>
+                    Shape like:<div class="hexagon"></div> <input class="hexagon" name="shape" type="radio">
+                </label></li>
+                <li><label>
+                    Shape like: <div class="star"></div> <input checked class="star" name="shape" type="radio">
+                </label></li>
+                <li><label>
+                    Shape like:<div class="circle"></div>  <input class="circle" name="shape" type="radio"> 
+                </label></li>
+                <li><label>
+                    Shape like: <div class="triangle"></div> <input class="triangle" name="shape" type="radio">
+                </label></li>
+                <!-- <li><label>
+                    Shape like: <div class="inset"></div> <input class="inset" name="shape" type="radio">
+                </label></li> -->
+            </ul>
+        <!-- </section> -->
        </section>
     </main>
 </body>
