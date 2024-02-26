@@ -3,116 +3,207 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Grid tutorial</title>
         <link rel="stylesheet" href="styles/teststyle.css" />
     </head>
     <body>
-        <h1>grid</h1>
-        <p>intro text over grid</p>
+        <main>
+            <h1>Grid</h1>
+            <p>This website shows simple grid techniques!</p>
 
-        <div>
-            <h2>grid basics</h2>
-            <p>grid-template-columns, fractions, span etc...</p>
-            <ul>
-                <li>
-                    <h3>Item 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 6</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-            </ul>
-        </div>
+            <!-- grid basics -->
+            <div>
+                <h2>Grid basics</h2>
+                <p>Grid-template-columns, fractions, span etc...</p>
+                <ul>
+                    <li>
+                        <h3>Item 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                        <label> <input type="checkbox" /> span column 2 </label>
+                    </li>
+                    <li>
+                        <h3>Item 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                        <label> <input type="checkbox" /> span row 2 </label>
+                    </li>
+                    <li>
+                        <h3>Item 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                        <label> <input type="checkbox" /> span column 2 </label>
+                    </li>
+                </ul>
 
-        <div>
-            <h2>grid area</h2>
-            <p>area name etc.</p>
-            <ul>
-                <li>
-                    <h3>Item 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 6</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-            </ul>
-        </div>
+                <!-- explanation + code snippets -->
+                <p>To start using grid simply add a display grid to the container element and use grid-template-columns to create your columns:</p>
+                <pre>
+                    <code>
+    div:first-of-type ul {
+        display: grid;
+        grid-template-columns: 1fr 10em 1fr;
+        gap: 1em;
+    }               </code>
+                </pre>
+                <p>Using span you can <em>span</em> a grid element across multiple columns or rows:</p>
+                <pre>
+                    <code>
+    div:first-of-type ul li:nth-child(2) {
+        background-color: goldenrod;
+        grid-column: span 2;
+    }               </code>
+                </pre>
 
-        <div>
-            <h2>grid masonry</h2>
-            <p>pinterest etc...</p>
-            <ul>
-                <li>
-                    <h3>Item 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat.</p>
-                </li>
-                <li>
-                    <h3>Item 4</h3>
-                </li>
-                <li>
-                    <h3>Item 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                    <h3>Item 6</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecet nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 7</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-                <li>
-                    <h3>Item 8</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas estie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
+                <pre>
+                    <code>
+    div:first-of-type ul li:nth-child(5) {
+        background-color: hotpink;
+        grid-row: span 2;
+    }               </code>
+                </pre>
+            </div>
 
-                <li>
-                    <h3>Item 9</h3>
-                    <p>Lorem ipsum get est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
-                </li>
-            </ul>
-        </div>
+            <!-- grid area -->
+            <div>
+                <h2>Grid area</h2>
+                <p>A bit more intuitive way to design grids, but maybe too much code...?</p>
+                <label> <input type="checkbox" /> activate grid area and add rows </label>
+                <ul>
+                    <li>
+                        <h3>Item 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                </ul>
+
+                <!-- explanation + code snippets -->
+                <p>The first thing you need to do is declare which grid elements you want to use. To do this, add a grid-area to each grid element. You can give it a name like item1, item2 etc.</p>
+                <pre>
+                    <code>
+    div:nth-of-type(2) li:nth-of-type(1) {
+        grid-area: item1;
+    }
+
+    div:nth-of-type(2) li:nth-of-type(2) {
+        grid-area: item2;
+    }
+
+    /* etc etc... */</code>
+                </pre>
+                <p>Now you can use grid-template-areas on the container to create the layout you want. Make sure your columns and rows are setup correctly so it doesn't break.</p>
+                <pre>
+                    <code>
+    div:nth-of-type(2) ul {
+        display: grid;
+        grid-template-columns: 20em 1fr 1fr;
+        grid-template-rows: 20em 1fr 20em;
+        grid-template-areas:
+            'item6 item2 item2'
+            'item3 item2 item2'
+            '.     item4 .'
+            'item1 item1 item5';
+        gap: 1em;
+    }              </code>
+                </pre>
+            </div>
+
+            <!-- masonry -->
+            <div>
+                <h2>Grid masonry</h2>
+                <p>Pinterest style. Not really available at the moment, but able to be used if you enable it in Firefox</p>
+                <label> <input type="checkbox" /> activate grid masonry </label>
+                <ul>
+                    <li>
+                        <h3>Item 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat.</p>
+                    </li>
+                    <li>
+                        <h3>Item 4</h3>
+                    </li>
+                    <li>
+                        <h3>Item 5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li>
+                        <h3>Item 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecet nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 7</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas eget est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 8</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat. Maecenas estie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+
+                    <li>
+                        <h3>Item 9</h3>
+                        <p>Lorem ipsum get est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                    <li>
+                        <h3>Item 10</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus lacus mattis maximus commodo. Etiam quis lectus erat.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur Etiam quis lectus erat. Maecenas estie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+
+                    <li>
+                        <h3>Item 12</h3>
+                        <p>Lorem ipsum get est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros. Lorem ipsum get est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros. Lorem ipsum get est rhoncus, hendrerit eros id, vulputate sapien. Cras arcu odio, aliquet ac molestie vel, congue nec eros. Sed et nunc eros.</p>
+                    </li>
+                </ul>
+
+                <!-- explanation + code snippets -->
+                <pre>
+                    <code>
+    div:nth-of-type(3) ul {
+        display: grid;
+        grid-template-columns: 1fr 10em 25em 10em;
+        grid-template-rows: masonry;
+        gap: 1em;
+    }               </code>
+                </pre>
+            </div>
+        </main>
+        <footer>&copy; Stephan 2024</footer>
     </body>
 </html>
