@@ -1,0 +1,129 @@
+html,
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1em;
+    background-color: blue;
+}
+
+div > p {
+    padding-bottom: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background-color: black;
+    padding: 1em;
+}
+
+ul li p {
+    color: #fff7;
+}
+
+h2,
+h3 {
+    margin-bottom: 0.6em;
+}
+
+div {
+    margin-top: 2em;
+    padding: 1em;
+    color: white;
+}
+
+/* *********** */
+/* Grid basics */
+/* *********** */
+
+div:first-of-type {
+    background-color: #0004;
+}
+
+div:first-of-type ul {
+    display: grid;
+    grid-template-columns: 1fr 10em 1fr;
+    gap: 1em;
+}
+
+div:first-of-type ul li:nth-child(2) {
+    grid-column: span 2;
+}
+
+div:first-of-type ul li:nth-child(5) {
+    grid-row: span 2;
+}
+
+div:first-of-type ul li:nth-child(6) {
+    grid-column: span 2;
+}
+
+/* ********* */
+/* Grid area */
+/* ********* */
+
+div:nth-of-type(2) {
+    background-color: #0005;
+}
+
+div:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 20em 1fr;
+    grid-template-rows: 20em 1fr 20em;
+    grid-template-areas:
+        'item1 item2'
+        'item1 item3'
+        'item4 item5'
+        'item6 item6';
+    gap: 1em;
+}
+
+div:nth-of-type(2) li:nth-of-type(1) {
+    grid-area: item1;
+}
+
+div:nth-of-type(2) li:nth-of-type(2) {
+    grid-area: item2;
+}
+
+div:nth-of-type(2) li:nth-of-type(3) {
+    grid-area: item3;
+}
+
+div:nth-of-type(2) li:nth-of-type(4) {
+    grid-area: item4;
+}
+
+div:nth-of-type(2) li:nth-of-type(5) {
+    grid-area: item5;
+}
+
+div:nth-of-type(2) li:nth-of-type(6) {
+    grid-area: item6;
+}
+
+/* ************ */
+/* Grid masonry */
+/* ************ */
+
+div:nth-of-type(3) {
+    background-color: #0004;
+}
+
+div:nth-of-type(3) ul {
+    display: grid;
+    grid-template-columns: 1fr 10em 25em;
+    grid-template-rows: masonry;
+    gap: 1em;
+}
