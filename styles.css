@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Emoji:wght@300..700&display=swap');
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+header h1 {
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-family:monospace; 
+    letter-spacing: 0.5rem;
+}
+
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main section {
+    display: flex;
+    gap: 2rem;
+    margin: auto 2em;
+}
+
+main section article {
+    background-color: rgb(34, 34, 34);
+    justify-content: center;
+    padding: 3em;
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 5em 1fr 3em;
+    border-radius: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: white 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+p {
+    margin-bottom: 2rem; @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Emoji:wght@300..700&display=swap')
+
+}
+
+a {
+    text-decoration: none;
+    font-family: "Noto Emoji", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    background-color: rgb(183, 0, 0);
+    width: fit-content;
+    align-items: center;
+    padding: 1em;
+    border-radius: 100px;     
+    transition: 0.5s;
+  }
+
+  a:hover {
+    background-color: rgb(134, 0, 0);
+    transition: 0.5s;
+  }
+
+  a:focus-visible {
+    outline: none;
+    box-shadow: red 0 0 2rem;
+  }
+
+  article:focus-within h2 {
+    color: white; 
+    transition: 0.5s;
+}
