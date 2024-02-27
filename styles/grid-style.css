@@ -1,0 +1,219 @@
+/* *********** */
+/* General css */
+/* *********** */
+
+:root {
+    --highlight-color: hotpink;
+}
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(73, 226, 246);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover {
+    color: white;
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
+h1,
+p,
+footer {
+    color: white;
+}
+
+body {
+    padding: 1em;
+    background-color: rgb(18, 48, 104);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    max-width: 70em;
+    margin: auto;
+}
+
+footer {
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+div {
+    margin: 2em auto auto auto;
+    padding: 1em;
+    border-radius: 0.5em;
+
+    color: white;
+    background-color: rgb(205, 229, 250);
+}
+
+div > p {
+    font-size: 1.1em;
+    padding: 1em 0 1em 0;
+    color: black;
+}
+
+div > h2 {
+    color: black;
+}
+
+/* code snippets */
+pre {
+    margin: 1em 0 0 0;
+    border-radius: 0.5em;
+    background-color: rgb(42, 44, 53);
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: rgb(28, 106, 232);
+    padding: 1em;
+    border-radius: 0.5em;
+
+    box-shadow: 0.4em 0.4em 0.1em #0002, inset 0 0 0.4em #fff3, inset 0.3em 0.3em 1em #fff4, inset -0.3em -0.3em 1em #0004;
+
+    transition: 0.3s;
+}
+
+li:hover {
+    outline: 5px solid rgb(18, 236, 91);
+}
+
+ul li p {
+    color: #fff7;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    margin-bottom: 0.6em;
+}
+
+/* input styling */
+div > label {
+    color: black;
+}
+
+label:hover {
+    color: blue;
+    background-color: rgba(0, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+label:has(input:checked) {
+    color: blue;
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
+/* *********** */
+/* Grid basics */
+/* *********** */
+
+div:first-of-type ul {
+    display: grid;
+    grid-template-columns: 1fr 10em 1fr;
+    gap: 1em;
+}
+
+/* input :has() selectors */
+div:first-of-type ul li:nth-child(2):has(input:checked) {
+    background-color: var(--highlight-color);
+    grid-column: span 2;
+}
+
+div:first-of-type ul li:nth-child(5):has(input:checked) {
+    background-color: var(--highlight-color);
+    grid-row: span 2;
+}
+
+div:first-of-type ul li:nth-child(6):has(input:checked) {
+    background-color: var(--highlight-color);
+    grid-column: span 2;
+}
+
+/* ********* */
+/* Grid area */
+/* ********* */
+
+div:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 20em 1fr 1fr;
+    gap: 1em;
+}
+
+div:nth-of-type(2):has(input:checked) ul {
+    grid-template-rows: 20em 1fr 20em;
+    grid-template-areas:
+        'item6 item2 item2'
+        'item3 item2 item2'
+        '.     item4 .'
+        'item1 item1 item5';
+}
+
+/* all grid-area names */
+div:nth-of-type(2):has(input:checked) li:nth-of-type(1) {
+    grid-area: item1;
+    background-color: var(--highlight-color);
+}
+
+div:nth-of-type(2):has(input:checked) li:nth-of-type(2) {
+    grid-area: item2;
+    background-color: var(--highlight-color);
+}
+
+div:nth-of-type(2):has(input:checked) li:nth-of-type(3) {
+    grid-area: item3;
+    background-color: var(--highlight-color);
+}
+
+div:nth-of-type(2):has(input:checked) li:nth-of-type(4) {
+    grid-area: item4;
+    background-color: var(--highlight-color);
+}
+
+div:nth-of-type(2):has(input:checked) li:nth-of-type(5) {
+    grid-area: item5;
+    background-color: var(--highlight-color);
+}
+
+div:nth-of-type(2):has(input:checked) li:nth-of-type(6) {
+    grid-area: item6;
+    background-color: var(--highlight-color);
+}
+
+/* ************ */
+/* Grid masonry */
+/* ************ */
+
+div:nth-of-type(3) ul {
+    display: grid;
+    grid-template-columns: 1fr 10em 25em 10em;
+    gap: 1em;
+}
+
+div:nth-of-type(3):has(input:checked) ul {
+    grid-template-rows: masonry;
+}
+
+div:nth-of-type(3):has(input:checked) li {
+    background-color: var(--highlight-color);
+}
