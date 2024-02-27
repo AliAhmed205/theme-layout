@@ -13,8 +13,7 @@
 <body>
     <header></header>
     <main>
-        <h1>Snacks</h1>
-        <p>On this page I made some different snacks.</p>
+        <a href="index.html">Home</a>
         <!-- text and shapes -->
        <section>
         <h2>Images/divs defining the path of the text</h2>
@@ -22,24 +21,25 @@
         <div class="image2"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        </section>
-       <!-- Images with-->
-       <!-- <section>
-            <h2>Other images</h2>
+       <section>
+        <!-- <h3>Object-fit and position</h3> -->
+        <div>
+            <p>object-fit: cover; with a max-height</p>
             <img src="images/road-image2.avif" alt="">
-            <img src="images/sea-image3.avif" alt="">
-       </section> -->
+        </div>
+        <div>
+            <p>aspect-ratio: 3/4;</p>
+            <img src="images/road-image2.avif" alt="">
+        </div>
+        <div>
+            <p>aspect-ratio:8/3; object-position: top;</p>
+            <img src="images/road-image2.avif" alt="">
+        </div>
+       </section>
        <!-- controls to change the position of the images -->
        <section>
-        <h2>Control the images</h2>
+        <h2>Control the image on the left top:</h2>
         <div>
-            <!-- <ul>
-                <li><label>
-                    Align them top: <input class="top" name="align-vert" type="radio">
-                </label></li>
-                <li><label>
-                    Align them bottom: <input class="bottom" name="align-vert" type="radio">
-                </label></li>
-            </ul> -->
             <ul>
                 <li><label>
                     Align them left: <input class="left" name="align-horizon" type="radio">
@@ -53,7 +53,6 @@
             </ul>
            
         </div>
-        <!-- <section> -->
             <ul>
                 <li><label>
                     Shape like:<div class="hexagon"></div> <input class="hexagon" name="shape" type="radio">
@@ -67,11 +66,7 @@
                 <li><label>
                     Shape like: <div class="triangle"></div> <input class="triangle" name="shape" type="radio">
                 </label></li>
-                <!-- <li><label>
-                    Shape like: <div class="inset"></div> <input class="inset" name="shape" type="radio">
-                </label></li> -->
             </ul>
-        <!-- </section> -->
        </section>
     </main>
 </body>
