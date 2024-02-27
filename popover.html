@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Over</title>
+    <link rel="stylesheet" href="./popover-styling.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pop-overs</h1>
+    </header>
+    <main>
+
+        <!-- Parent container of the popovers -->
+        <section>
+
+            <!-- First Popover | Transitioning Popover -->
+            <article>
+                <button id="size-guide-btn" popovertarget="size-guide">Press Me</button>
+                <article id="size-guide" popover>
+                    <h2>Elegant, aren't I?</h2>
+                    <p>This pop-up makes a smooth and nice entrance. It's soft and transitions gracefully, making the
+                        user feel at ease.</p>
+                </article>
+            </article>
+            <article>
+                <button id="classic-button" popovertarget="my-popover"> Press Me </button>
+
+                <!-- Second popover | Warning Popover -->
+                <article id="my-popover" popover>
+                    <p>Wait hold on</p>
+                    <p>I'm your basic, average popover. They sure knew how to push my buttons back in the day. Listen
+                        kid, I'm old and retired. Don't expect glitters and sparkles from me.<p>
+                </article>
+
+            </article>
+
+            <!-- Icon popover -->
+            <article>
+                <article class="menu">
+                    <button class="menu-toggle" id="menu-toggle" popovertarget="menu-items">
+                        <p>➕</p>
+                    </button>
+                    <menu class="menu-items" id="menu-items" popover anchor="menu-toggle">
+                        <li class="item">
+                            <button aria-label="Love it">♥️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Diner">🍽️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Your Links">🔗</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Check your mail">✉️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Go Shopping!">🛒</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Groceries">🍎</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Vacation">✈️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Art and Craft">🎨</button>
+                        </li>
+                        <!--  Need extra close button bc the popover lays on top of the X and doesn't let you get to it    -->
+                        <li class="item">
+                            <button popovertargetaction="close" popovertarget="menu-items" class="hidden-close">
+                            </button>
+                        </li>
+                    </menu>
+                </article>
+            </article>
+
+            <!-- Info-popover -->
+            <article>
+                <span>
+                    <button id="my-anchor" class="anchor" popovertarget="explain">?</button>
+                    <!-- Button triggering popover -->
+                    <p popover anchor="my-anchor" id="explain">"What do you mean", that's what it means.</p>
+                    <!-- Content of the popover -->
+                    <p>wdym</p> <!-- Additional content -->
+                </span>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <article>
+                <h3>The Transition Popover</h3>
+                <p>Browsers can't smoothly animate certain changes yet, like making things appear or disappear
+                    smoothly. But, in an upcoming version of Chromium (the engine behind Chrome), they're planning to
+                    add this feature. When it's available, developers can use it to create smoother transitions when
+                    opening and closing popovers. This will make websites feel more polished and easier to use.
+                    <br>
+                    <br>
+                    Once this feature is added, developers can make things move smoothly on the screen using special
+                    instructions like ":popover-open" and "@starting-style". They can also set up how things look before
+                    and after they move, so that the transitions between popovers are really smooth. This makes the
+                    website or app feel nicer to use because everything moves more gracefully.
+                </p>
+            </article>
+            <article>
+                <h3>The Static Popover</h3>
+                <p>By default, such as in the previous code snippet, setting up a popover with a popovertarget means the
+                    button or element that opens the popover will toggle it open and closed. However, you can also
+                    create explicit popovers using popovertargetaction. This overrides the default toggle action.
+                    popovertargetaction options include: popovertargetaction="show": Shows the popover.
+                    popovertargetaction="hide": Hides the popover.
+                </p>
+            </article>
+
+            <article>
+                <h3>Anchor Positioning</h3>
+                <p>Anchor positioning
+                    Popovers are handy when you need to place an alert, modal, or notification depending on the screen.
+                    But they're also great for menus, tooltips, and things that should be placed near other elements.
+                    That's where CSS anchoring helps.
+
+                    In the example below, we use the popover tool together with CSS anchoring to make sure that the
+                    popover #menu-items is always connected to its toggle button, the #menu-toggle button.
+                </p>                
+            </article>
+
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

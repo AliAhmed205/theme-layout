@@ -1,0 +1,490 @@
+/* Imports Google Fonts for emoji */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@600&display=swap');
+
+/* Defines custom font for Windows */
+@font-face {
+    font-family: windowsFont;
+    src: url(./ms-sans-serif.otf);
+}
+
+/* Resets margin for all elements */
+* {
+    margin: 0;
+}
+
+/* Sets custom CSS variables */
+:root {
+    --btn-size: 3rem;
+    --extra-space: 1.5rem;
+}
+
+/* Styling for header */
+header {
+    padding: 2rem;
+}
+
+/* Styling for h1 */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-in; 
+    animation-fill-mode: forwards;
+    padding: 1rem;
+    max-width: fit-content;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    box-shadow: #0000004b 0 0 1rem;
+}
+
+/* Styling for the first section:first-of-type  */
+main section:first-of-type {
+    height: 18.75rem; 
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* Styling for size guide button */
+#size-guide-btn {
+    padding: 1rem 3rem;
+    border-radius: 6.25rem; 
+    font-size: 1rem;
+    width: fit-content;
+    border: solid 0.0625rem rgba(0, 0, 0, 0.369); 
+    transition: 0.5s;
+    color: grey;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+/* Styling for body */
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+/* Hover effect for size guide button */
+#size-guide-btn:hover {
+    border: solid 0.0625rem #ff0f0f; /* 1px converted to rem */
+    color: #ff0f0f;
+}
+
+/* Styling for classic button */
+#classic-button {
+    background-color: #b0b0bf;
+    font-size: 1.5rem;
+    border-left: solid 0.1875rem white; /* 3px converted to rem */
+    border-top: solid 0.1875rem white; /* 3px converted to rem */
+    border-right: solid 0.1875rem black; /* 3px converted to rem */
+    border-bottom: solid 0.1875rem black; /* 3px converted to rem */
+    font-family: windowsFont;
+}
+
+/* Styling for articles within main section */
+main section:first-of-type > article {
+    background-color: #ebebeb;
+    margin: 1em 0.5em;
+    border-radius: 1.25rem; /* 20px converted to rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+/* Styling for buttons within articles */
+main section:first-of-type  > article button {
+    height: fit-content;
+}
+
+/* Styling for backdrop of size guide */
+#size-guide::backdrop {
+    background: rgba(241, 241, 241, 0.834);
+    transition: 0.5s;
+}
+
+/* Styling for size guide popover */
+#size-guide {
+    padding: 3rem;
+    border: none;
+    width: clamp(18.75rem, 80vw, 37.5rem); /* 300px, 80vw, 600px converted to rem */
+    max-height: 30rem; /* 480px converted to rem */
+    background-color: white;
+    border-radius: 1.25rem; /* 20px converted to rem */
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Styling for h2 within size guide */
+#size-guide h2 {
+    margin: 0 0 1rem;
+}
+
+/* Styling for my-popover */
+#my-popover {
+    margin: auto;
+    background-color: #b0b0bf;
+    height: fit-content;
+    width: 30%;
+    font-family: windowsFont;
+}
+
+/* Styling for paragraphs within my-popover */
+#my-popover p:nth-of-type(2) {
+    padding: 1em;
+}
+
+/* Styling for first paragraph within my-popover */
+#my-popover p:first-of-type {
+    background-color: darkblue;
+    height: 1.25rem; /* 20px converted to rem */
+    color: white;
+    padding: 0.2em;
+}
+
+/* Styling for button within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span button {
+    position: absolute;
+    left: 75.5rem;
+    top: 22.3rem;
+    appearance: none;
+    background-color: rgb(7, 7, 106);
+    width: 1.2rem;
+    color: white;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    border: none;
+}
+
+/* Hover effect for button within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span button:hover {
+    background-color: rgb(3, 3, 33);
+}
+
+/* Styling for first paragraph within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span p:first-of-type {
+    font-size: 1rem;
+    width: 10em;
+    position: absolute;
+    bottom: 3rem;
+    text-align: center;
+    background-color: rgb(3, 3, 33);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.625rem; /* 10px converted to rem */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    opacity: 1;
+    transition: 0.5s;
+    top: 18rem;
+    left: 70rem;
+}
+
+/* Styling for second paragraph within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span p:nth-of-type(2){
+    font-size: 1.5rem;
+}
+
+
+
+/* Animating */
+#size-guide {
+    &:popover-open {
+
+        /*   0. BEFORE-OPEN STATE   */
+        /*  initial state for what we're animating *in* from, 
+        in this case: goes from lower (y + 20px) to center  */
+        @starting-style {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        /*   1. OPEN STATE   */
+        /*  state when popover is open, BOTH:
+        what we're transitioning *in* to 
+        and transitioning *out* from */
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /*   2. AFTER-OPEN-IS-CLOSED STATE   */
+    /*  initial state for what we're animating *out* to , 
+      in this case: goes from center to (y - 50px) higher */
+    transform: translateY(-50px);
+    opacity: 0;
+
+    /*  enumarate transitioning properties, including display */
+    transition: transform 0.5s,
+    opacity 0.5s,
+    display 0.5s;
+    transition-behavior: allow-discrete;
+}
+
+/* Where the magic happens */
+.item {
+    --radius: calc(var(--btn-size) + var(--extra-space));
+    background-color: var(--bg);
+    transform: translateX(calc(cos(var(--angle)) * var(--radius))) translateY(calc(sin(var(--angle) * -1) * var(--radius))) rotate(0deg);
+    opacity: 0;
+    transition: all 0.3s var(--delay) ease;
+}
+
+/* Adding for popover base */
+
+.menu-items:not(:popover-open) .item {
+    --radius: 0;
+    --angle: 0;
+    rotate: 45deg;
+}
+
+.menu:hover {
+    background-color: rgb(255, 207, 172);
+}
+
+
+
+/* rotate the "plus" */
+.menu-toggle>button {
+    transition: transform 0.2s;
+}
+
+.menu:has(:popover-open) .menu-toggle>button {
+    transform: rotate(45deg);
+}
+
+.menu-items {
+    bottom: calc(anchor(bottom));
+    left: anchor(center);
+    translate: -50% 0;
+    /*  popover override  */
+    background: none;
+    border: none;
+}
+
+.hidden-close {
+    transform: rotate(45deg);
+    transition: opacity 0.1s;
+    width: var(--btn-size);
+    aspect-ratio: 1;
+}
+
+:popover-open .item {
+    opacity: 1;
+}
+
+/* Every item gets a background, angle, and delay */
+/* This gets updated when the popover is open */
+
+.item:nth-child(1) {
+    --bg: white;
+    --angle: 0deg;
+    --delay: 0s;
+}
+
+.item:nth-child(1):hover {
+    --bg: rgb(255, 137, 210);
+
+}
+
+.item:nth-child(2):hover {
+    --bg: lightblue;
+
+}
+
+.item:nth-child(3):hover {
+    --bg: lightgreen;
+
+}
+
+.item:nth-child(4):hover {
+    --bg: lightyellow; 
+
+}
+
+.item:nth-child(5):hover {
+    --bg: rgb(154, 154, 255);
+
+}
+
+.item:nth-child(6):hover {
+    --bg: rgb(171, 255, 255);
+
+}
+
+.item:nth-child(7):hover {
+    --bg: rgb(241, 255, 147);
+
+}
+
+.item:nth-child(8):hover {
+    --bg: rgb(224, 153, 240);
+
+}
+
+.item:nth-child(2) {
+    --bg: white;
+    --angle: 45deg;
+    --delay: 0.1s;
+}
+
+.item:nth-child(3) {
+    --bg: white;
+    --angle: 90deg;
+    --delay: 0.2s;
+}
+
+.item:nth-child(4) {
+    --bg: white;
+    --angle: 135deg;
+    --delay: 0.3s;
+}
+
+.item:nth-child(5) {
+    --bg: white;
+    --angle: 180deg;
+    --delay: 0.4s;
+}
+
+.item:nth-child(6) {
+    --bg: white;
+    --angle: 225deg;
+    --delay: 0.5s;
+}
+
+.item:nth-child(7) {
+    --bg: white;
+    --angle: 225deg;
+    --delay: 0.6s;
+}
+
+.item:nth-child(7) {
+    --bg: white;
+    --angle: 270deg;
+    --delay: 0.7s;
+}
+
+.item:nth-child(8) {
+    --bg: white;
+    --angle: 315deg;
+    --delay: 0.8s;
+}
+
+
+/* Not related to demo, just styling */
+
+.item {
+    border-radius: 50%;
+    width: var(--btn-size);
+    aspect-ratio: 1;
+}
+
+.menu-toggle {
+    border-radius: 50%;
+    width: var(--btn-size);
+    aspect-ratio: 1;
+    z-index: 1;
+}
+
+/* Grid piles */
+
+.menu {
+    display: grid;
+    place-content: center;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.menu-items {
+    display: grid;
+    place-content: center;
+}
+
+.item {
+    display: grid;
+    place-content: center;
+}
+
+.menu>*,
+.menu-items>*,
+.item button {
+    grid-area: 1/1;
+}
+
+
+.menu button {
+    border: none;
+    background: none;
+    font-family: 'Noto Emoji';
+    color: #222;
+    font-size: 1.25rem;
+}
+
+.menu button:focus-visible {
+    outline: 2px dashed rgb(61, 119, 255);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+
+.menu,
+.menu-items {
+    overflow: unset;
+}
+article:last-of-type span p:last-of-type {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Styling for the 2nd section:first-of-type  */ 
+
+
+main section:nth-of-type(2) {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main section:nth-of-type(2) article {
+    margin: 0 12rem 3rem 12rem;
+}
+
+hr {
+    background-color: white;
+    margin: 3rem 12rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3:hover + section:first-of-type article {
+    box-shadow: yellow 0 0 20px;
+}
+
+
+@keyframes slideIn {
+    0% {
+        translate: 0rem -60rem;
+    }
+
+    70% {
+        translate: 0rem 2rem;
+    }
+
+    90% {
+        translate: 0rem -2rem;
+    }
+
+    100% {
+        translate: 0rem 0rem;
+    }
+}
