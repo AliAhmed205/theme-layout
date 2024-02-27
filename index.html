@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Over</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pop-overs</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <button id="size-guide-btn" popovertarget="size-guide">Press Me</button>
+                <article id="size-guide" popover>
+                    <h2>Elegant, aren't I?</h2>
+                    <p>This pop-up makes a smooth and nice entrance. It's soft and transitions gracefully, making the
+                        user feel at ease.</p>
+                </article>
+            </article>
+            <article>
+                <button id="classic-button" popovertarget="my-popover"> Press Me </button>
+
+                <article id="my-popover" popover>
+                    <p>Wait hold on</p>
+                    <p>I'm your basic, average popover. They sure knew how to push my buttons back in the day. Listen
+                        kid, I'm old and retired. Don't expect glitters and sparkles from me.<p>
+                </article>
+                
+            </article>
+
+            <article>
+                <article class="menu">
+                    <button class="menu-toggle" id="menu-toggle" popovertarget="menu-items">
+                        <p>➕</p>
+                    </button>
+                    <menu class="menu-items" id="menu-items" popover anchor="menu-toggle">
+                        <li class="item">
+                            <button aria-label="Love it">♥️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Diner">🍽️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Your Links">🔗</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Check your mail">✉️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Go Shopping!">🛒</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Groceries">🍎</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Vacation">✈️</button>
+                        </li>
+                        <li class="item">
+                            <button aria-label="Art and Craft">🎨</button>
+                        </li>
+                        <!--  Need extra close button bc the popover lays on top of the X and doesn't let you get to it    -->
+                        <li class="item">
+                            <button popovertargetaction="close" popovertarget="menu-items" class="hidden-close">
+                            </button>
+                        </li>
+                    </menu>
+                </article>
+            </article>
+            <article>
+                <span>
+                    <button id="my-anchor" class="anchor" popovertarget="explain">?</button>
+
+                    <p popover anchor="my-anchor" id="explain">"What do you mean", that's what it means.</p>
+                    
+                    <p>wdym</p>
+                </span>
+            </article>
+
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
