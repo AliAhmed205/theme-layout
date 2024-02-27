@@ -461,6 +461,28 @@ hr {
 
 }
 
+pre{
+    background-color: rgb(62, 62, 62);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    
+}
+
+code {
+    color: rgb(255, 255, 255);
+}
+
+header a {
+    position: fixed;
+    z-index: 99;
+    font-family: 'Noto Emoji', sans-serif;
+    color: white;
+    top: 2rem;
+    font-size: 2rem;
+}
+
 h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -468,6 +490,18 @@ h3 {
 
 h3:hover + section:first-of-type article {
     box-shadow: yellow 0 0 20px;
+}
+
+section:nth-of-type(2) article:last-of-type a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: underline;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+section:nth-of-type(2) article:last-of-type p {
+    margin-bottom: 1rem;
 }
 
 
