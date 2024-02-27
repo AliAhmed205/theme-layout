@@ -18,6 +18,17 @@ li {
     padding: 0;
 }
 
+a {
+    color: rgb(73, 226, 246);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover {
+    color: white;
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
 h1,
 p,
 footer {
@@ -45,7 +56,7 @@ div {
     padding: 1em;
     border-radius: 0.5em;
 
-    color: rgb(255, 255, 255);
+    color: white;
     background-color: rgb(205, 229, 250);
 }
 
@@ -76,7 +87,7 @@ li {
     padding: 1em;
     border-radius: 0.5em;
 
-    box-shadow: 0.4em 0.4em 0.1em #0003, inset 0 0 0.4em #fff3, inset 0.3em 0.3em 1em #fff4, inset -0.3em -0.3em 1em #0004;
+    box-shadow: 0.4em 0.4em 0.1em #0002, inset 0 0 0.4em #fff3, inset 0.3em 0.3em 1em #fff4, inset -0.3em -0.3em 1em #0004;
 
     transition: 0.3s;
 }
