@@ -1,0 +1,304 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 38, 38);
+}
+
+:root {
+}
+
+/* all the divs in the ul li's */
+body div {
+    width: 20px;
+    height: 20px;
+    shape-outside: url("images/star.webp");
+}
+body img {
+    max-width: 10em;
+}
+
+main {
+    margin: auto;
+    margin-top: 1rem;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+    position: relative;
+}
+main section:nth-child(1){
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+main section h1:has(+ p) {
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+main section h1 + p {
+    margin-top: 0.1rem;
+    margin-left: 1rem;
+}
+main > a {
+    position: absolute;
+    background-color: white;
+    text-decoration: none;
+    padding: 0.8em;
+    border-radius: 10px;
+    transition: 200ms;
+    color: black;
+}
+main > a:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+body main section {
+    padding: 1rem;
+    height: fit-content;
+}
+body main section h2,
+body main section h3 {
+    margin-top: 0;
+}
+body main section:nth-child(2) > h2 {
+    margin-top: 1em;
+}
+body main section:nth-child(2) div.image1 {
+    float: left;
+    background-image: url("images/road-image2.avif");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 0.5rem;
+}
+body main section:nth-child(2) div.image2 {
+    float: right;
+    shape-outside: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-image: url("images/station-image1.webp");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    /* object-fit: fill but then for background images */
+    background-position: center;
+    margin: 0.5rem;
+}
+body main section:nth-child(2) p {
+    max-height: 20em;
+}
+
+/* Object fit and position section */
+main section:nth-child(3) {
+    padding-top: 0;
+    z-index: 999;
+    background-color: white;
+    border-top: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+main section:nth-child(3) > div {
+    height: fit-content;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section:nth-child(3) > div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+main section:nth-child(3) > div:nth-child(1) img {
+    max-height: 10em;
+    max-width: none;
+    object-fit: cover;
+}
+main section:nth-child(3) > div:nth-child(2) img {
+    aspect-ratio: 3/4;
+}
+main section:nth-child(3) > div:nth-child(3) img {
+    aspect-ratio:8/3;
+    object-position: top;
+}
+
+
+/* control panel */
+main section:last-child {
+    background-color: rgb(38, 38, 38);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3em 1fr;
+}
+main section:last-child h2 {
+    grid-column: 1 / 3;
+}
+main section:last-child ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+main section:last-child ul li {
+    list-style: none;
+    width: 30%;
+    margin-bottom: 0.5rem;
+}
+main section:last-child ul li label {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+main section:last-child ul li label input {
+    margin: 0;
+}
+main section:last-child ul li label > div {
+    background-color: white;
+}
+/* Icons in the labels */
+/* star */
+main section:last-child ul li label > div.star {
+    shape-outside: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+/* hexagon */
+main section:last-child ul li label > div.hexagon {
+    shape-outside: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/* circle */
+main section:last-child ul li label > div.circle {
+    shape-outside: circle();
+    clip-path: circle();
+}
+/* inset */
+main section:last-child ul li label > div.triangle {
+    shape-outside: polygon(0 0, 0 300px, 200px 300px);
+    clip-path: polygon(0 0, 0 300px, 200px 300px);
+}
+/* ellipse */
+main section:last-child ul li label > div.ellipse {
+    shape-outside: ellipse();
+    clip-path: ellipse();
+    height: 30px;
+}
+
+main section:last-child > div {
+    width: 50%;
+    height: 100%;
+}
+main section:last-child div ul li {
+    width: 100%;
+}
+main section:last-child div > label {
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Kind of like all the if statements for the shape of image1*/
+html:has(.circle:checked) .image1 {
+    shape-outside: circle();
+    clip-path: circle();
+}
+html:has(.hexagon:checked) .image1 {
+    shape-outside: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+html:has(.star:checked) .image1 {
+    shape-outside: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+html:has(.triangle:checked) .image1 {
+    shape-outside: polygon(0 0, 0 300px, 200px 300px);
+    clip-path: polygon(0 0, 0 300px, 200px 300px);
+}
+
+/* Kind of like all the if statements for the position of image1 */
+html:has(.left:checked) .image1 {
+    background-position: left;
+}
+html:has(.right:checked) .image1 {
+    background-position: right;
+}
+html:has(.center:checked) .image1 {
+    background-position: center;
+}
+
