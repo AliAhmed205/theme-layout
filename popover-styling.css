@@ -1,24 +1,29 @@
+/* Imports Google Fonts for emoji */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@600&display=swap');
 
+/* Defines custom font for Windows */
 @font-face {
     font-family: windowsFont;
     src: url(./ms-sans-serif.otf);
 }
 
-
+/* Resets margin for all elements */
 * {
     margin: 0;
 }
 
+/* Sets custom CSS variables */
 :root {
     --btn-size: 3rem;
     --extra-space: 1.5rem;
 }
 
+/* Styling for header */
 header {
     padding: 2rem;
 }
 
+/* Styling for h1 */
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -35,8 +40,9 @@ h1 {
     box-shadow: #0000004b 0 0 1rem;
 }
 
-main section {
-    height: 300px;
+/* Styling for the first section:first-of-type  */
+main section:first-of-type {
+    height: 18.75rem; 
     width: 100%;
     margin-top: 5rem;
     display: flex;
@@ -44,44 +50,46 @@ main section {
     background-color: transparent;
 }
 
+/* Styling for size guide button */
 #size-guide-btn {
     padding: 1rem 3rem;
-    border-radius: 100px;
+    border-radius: 6.25rem; 
     font-size: 1rem;
     width: fit-content;
-    border: solid 1px rgba(0, 0, 0, 0.369);
+    border: solid 0.0625rem rgba(0, 0, 0, 0.369); 
     transition: 0.5s;
     color: grey;
     font-size: 1rem;
     background-color: transparent;
-
 }
 
+/* Styling for body */
 body {
-    background-color: rgb(236, 242, 245);
+    background-color: rgb(23, 23, 23);
 }
 
+/* Hover effect for size guide button */
 #size-guide-btn:hover {
-    border: solid 1px #ff0f0f;
+    border: solid 0.0625rem #ff0f0f; /* 1px converted to rem */
     color: #ff0f0f;
 }
 
-
+/* Styling for classic button */
 #classic-button {
     background-color: #b0b0bf;
     font-size: 1.5rem;
-    border-left: solid white 3px;
-    border-top: solid white 3px;
-    border-right: solid black 3px;
-    border-bottom: solid black 3px;
+    border-left: solid 0.1875rem white; /* 3px converted to rem */
+    border-top: solid 0.1875rem white; /* 3px converted to rem */
+    border-right: solid 0.1875rem black; /* 3px converted to rem */
+    border-bottom: solid 0.1875rem black; /* 3px converted to rem */
     font-family: windowsFont;
-
 }
 
-main section > article {
+/* Styling for articles within main section */
+main section:first-of-type > article {
     background-color: #ebebeb;
     margin: 1em 0.5em;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px converted to rem */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,32 +98,35 @@ main section > article {
     flex-direction: column;
 }
 
-main section>article button {
+/* Styling for buttons within articles */
+main section:first-of-type  > article button {
     height: fit-content;
 }
 
-
+/* Styling for backdrop of size guide */
 #size-guide::backdrop {
     background: rgba(241, 241, 241, 0.834);
     transition: 0.5s;
 }
 
+/* Styling for size guide popover */
 #size-guide {
     padding: 3rem;
     border: none;
-    width: clamp(300px, 80vw, 600px);
-    max-height: 480px;
+    width: clamp(18.75rem, 80vw, 37.5rem); /* 300px, 80vw, 600px converted to rem */
+    max-height: 30rem; /* 480px converted to rem */
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px converted to rem */
     margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Styling for h2 within size guide */
 #size-guide h2 {
     margin: 0 0 1rem;
 }
 
-
+/* Styling for my-popover */
 #my-popover {
     margin: auto;
     background-color: #b0b0bf;
@@ -124,26 +135,24 @@ main section>article button {
     font-family: windowsFont;
 }
 
+/* Styling for paragraphs within my-popover */
 #my-popover p:nth-of-type(2) {
     padding: 1em;
 }
 
+/* Styling for first paragraph within my-popover */
 #my-popover p:first-of-type {
     background-color: darkblue;
-    height: 20px;
+    height: 1.25rem; /* 20px converted to rem */
     color: white;
     padding: 0.2em;
 }
 
-main section article:nth-of-type(4) span {
-    position: relative;
-
-}
-
-main section article:nth-of-type(4) span button {
+/* Styling for button within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span button {
     position: absolute;
-    left: 4rem;
-    bottom: 1rem;
+    left: 75.5rem;
+    top: 22.3rem;
     appearance: none;
     background-color: rgb(7, 7, 106);
     width: 1.2rem;
@@ -155,14 +164,13 @@ main section article:nth-of-type(4) span button {
     border: none;
 }
 
-
-main section article:nth-of-type(4) span button:hover {
+/* Hover effect for button within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span button:hover {
     background-color: rgb(3, 3, 33);
 }
 
-
-
-main section article:nth-of-type(4) span p:first-of-type {
+/* Styling for first paragraph within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span p:first-of-type {
     font-size: 1rem;
     width: 10em;
     position: absolute;
@@ -171,19 +179,20 @@ main section article:nth-of-type(4) span p:first-of-type {
     background-color: rgb(3, 3, 33);
     color: white;
     padding: 0.5rem;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px converted to rem */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
     opacity: 1;
     transition: 0.5s;
-    top: 19rem;
+    top: 18rem;
     left: 70rem;
 }
 
-main section article:nth-of-type(4) span p:nth-of-type(2){
+/* Styling for second paragraph within span of fourth article */
+main section:first-of-type  article:nth-of-type(4) span p:nth-of-type(2){
     font-size: 1.5rem;
-
 }
+
 
 
 /* Animating */
@@ -369,7 +378,7 @@ main section article:nth-of-type(4) span p:nth-of-type(2){
 }
 
 
-/* Not related to demmo, just styling */
+/* Not related to demo, just styling */
 
 .item {
     border-radius: 50%;
@@ -432,6 +441,35 @@ main section article:nth-of-type(4) span p:nth-of-type(2){
 article:last-of-type span p:last-of-type {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+/* Styling for the 2nd section:first-of-type  */ 
+
+
+main section:nth-of-type(2) {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main section:nth-of-type(2) article {
+    margin: 0 12rem 3rem 12rem;
+}
+
+hr {
+    background-color: white;
+    margin: 3rem 12rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3:hover + section:first-of-type article {
+    box-shadow: yellow 0 0 20px;
+}
+
 
 @keyframes slideIn {
     0% {
